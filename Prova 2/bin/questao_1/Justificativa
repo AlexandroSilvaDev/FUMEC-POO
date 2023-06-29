@@ -1,0 +1,4 @@
+A classe "A", no caso da figura, está representada como uma classe que herda (extends) 
+de duas outras classes "C" e "D". Aí está o erro, porque uma classe em java só pode herdar
+de uma classe e a figura representa a herança de duas outras classes ao mesmo tempo na 
+classe "A".

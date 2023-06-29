@@ -1,0 +1,16 @@
+Na interface, apos o "public ..." deveria vir "... interface ...". Porem, vem 
+"public Interface I", o erro eh que para ser conhecido como uma classe do tipo interface
+o certo deveria estar escrito "public interface I" com o "i" inicial da palavra interface
+minusculo.
+
+O erro acima acarretara em outro na classe abstrata "A", porque ela esta tentando implementar 
+a "interface" I que não se comporta como uma classe do tipo interface.
+
+Outro erro se encontra no fato de, ao considerar a interface representada com "i" minusculo
+onde ela realmente faria o papel de uma interface, ela esta sendo implementada por uma classe 
+abstrata, que pode ou não implementar seus comportamentos e de fato ela nao implementa os
+comportamentos da interface "I". Porem, esta classe abstrata eh a super classe da classe "B",
+portanto, a responsabilidade de implementar os comportamentos da interface "I", neste caso,
+eh da classe "B". Ela nao esta implementando o metodo "public String metodo()", entao este
+eh outro erro, porque neste caso, a classe "B" eh responsavel por implementar todos os metodos
+da interface. 
